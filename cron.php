@@ -1,1 +1,5 @@
-<?php // cron functions here ?>
+<?php // cron jobs here
+
+// Do something
+
+?>
