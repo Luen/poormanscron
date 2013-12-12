@@ -5,9 +5,9 @@ $interval = 60*15;// between cron
 
 
 $currenttime = time();
-if (!file_exists($cronfile)) {
-	cron();
-	file_put_contents($cronfile,$currenttime);
+if (!file_exists($cronfile)) { // If cron.txt does not exist
+	cron(); // run cron job
+	file_put_contents($cronfile,$currenttime); // Create cron.txt
 }
 $lastcron = intval(file_get_contents($cronfile));
 $nextcron = $lastcron + $interval;

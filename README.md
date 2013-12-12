@@ -30,7 +30,7 @@ Requirements
 How it works
 -----------
 
-The poor man's cron script is a js script that runs an inifinite loop while it triggers the php file. It uses a counter which ticks every MINUTE and resets after 1440 cycle which roughly equivalent to 24 hours ++ or so.
+The poor man's cron script is a js script that runs an infinite loop while it triggers the php file. It uses a counter which ticks every MINUTE and resets after 1440 cycle which roughly equivalent to 24 hours ++ or so.
 
 The default sleeps for a minute and cycles for 1440 rounds.
 
@@ -40,10 +40,12 @@ Installation
 For the scheduler to work, your site needs regular traffic. Currently, the cron does not work on exact time/date and will never be. It is designed for jobs on certain intervals such as  every 30 minutes, every hour or once a day.
 This assumes that your site has a web based cron job that needs to be triggered. Be sure to include security and validation to avoid abuse from malicious users.
 
-- Add both JS scripts in your <head>
+- Include jQuery and the plugin on a page.
+```html
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
   <script src="jquery.poormanscron.js" type="text/javascript"></script>
-  
+```
+
 - Point 'jquery.poormanscron.js' to your php file.
 
 - Include the scripts you want to run in your 'cron.php' file.
@@ -52,3 +54,7 @@ Attribution
 -----------
 Original idea from the Drupal Poormanscron module which is now part of Drupal core. 
 https://drupal.org/project/poormanscron
+
+Related
+-----------
+See also https://github.com/Absulit/PMC
