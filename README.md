@@ -55,6 +55,5 @@ Attribution
 Original idea from the Drupal Poormanscron module which is now part of Drupal core. 
 https://drupal.org/project/poormanscron
 
-Related
------------
+### Related
 See also https://github.com/Absulit/PMC
